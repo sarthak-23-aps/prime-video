@@ -1,0 +1,308 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    color: white;
+}
+
+header nav {
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.925);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbtn h1 {
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.navbtn2 h2 {
+    font-size: 18px;
+    background-color: transparent;
+    padding: 9px 15px;
+    white-space: nowrap;
+}
+
+.navbtn2 h2:hover {
+    color: black;
+    background-color: white;
+    border-radius: 6px;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.navbtn {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-left: 30px;
+}
+
+.navbtn button {
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    padding: 11px 15px;
+    background-color: transparent;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.navbtn2 {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-right: 27px;
+}
+
+.navbtn2 button {
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    padding: 11px 15px;
+    background-color: rgb(73, 129, 233);
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.abc {
+    background-color: transparent;
+    font-size: 18px;
+    padding: 10px 12px;
+}
+
+.ac {
+    font-size: 32px;
+    padding: 7px 7px;
+}
+
+.navbtn button:hover {
+    background-color: white;
+    color: black;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.navbtn2 button:hover {
+    background-color: rgb(73, 84, 233);
+    color: white;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.abc:hover {
+    background-color: white;
+    color: black;
+    border-radius: 100%;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+
+}
+
+.ac:hover {
+    background-color: white;
+    color: black;
+    border-radius: 100%;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.onlysmall {
+    display: none;
+}
+
+@media only screen and (max-width:1100px) {
+    .onlybig {
+        display: none;
+    }
+
+    .onlysmall {
+        display: flex;
+        background-color: transparent;
+        padding: 6px 6px;
+        border-radius: 6px;
+    }
+
+    .onlysmall option {
+        background-color: transparent;
+        border: 0;
+        outline: none;
+    }
+
+    .onlysmall select {
+        background-color: transparent;
+        color: white;
+        font-size: 15px;
+        border: 0;
+        outline: none;
+    }
+
+    .onlysmall:hover {
+        background-color: white;
+    }
+
+    .onlysmall select:hover {
+        color: black;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+    .navbtn {
+        margin-right: 180px;
+        gap: 12px;
+
+    }
+
+    .navbtn2 {
+        gap: 12px;
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width:760px) {
+    header nav {
+        height: 6vh;
+    }
+
+    .navbtn h1 {
+        font-size: 11px;
+    }
+
+    .navbtn {
+        gap: 4px;
+        margin-left: 10px;
+        margin-right: 80px;
+    }
+
+    .navbtn2 h2 {
+        gap: 1px;
+        padding: 7px 4px;
+    }
+
+    .navbtn2 {
+        gap: 4px;
+        margin-right: 13px;
+    }
+
+    .onlysmall {
+        display: flex;
+        background-color: transparent;
+        padding: 5px 0;
+        border-radius: 6px;
+    }
+
+    .onlysmall option {
+        background-color: transparent;
+        border: 0;
+        outline: none;
+    }
+
+    .onlysmall select {
+        background-color: transparent;
+        color: white;
+        font-size: 10px;
+        border: 0;
+        outline: none;
+    }
+
+    .navbtn2 button {
+        padding: 11px 4px;
+        font-size: 9px;
+    }
+
+    .abc {
+        font-size: 13px;
+        padding: 5px 5px;
+    }
+
+    .ac {
+        font-size: 20px;
+        padding: 3px 3px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    header nav {
+        height: 6vh;
+    }
+
+    .navbtn h1 {
+        font-size: 9px;
+    }
+
+    .navbtn {
+        gap: 3px;
+        margin-left: 8px;
+        margin-right: 60px;
+    }
+
+    .navbtn2 h2 {
+        font-size: 13px;
+        gap: 1px;
+        padding: 9px 2px;
+    }
+
+    .navbtn2 {
+        gap: 3px;
+        margin-right: 10px;
+    }
+
+    .onlysmall {
+        display: flex;
+        background-color: transparent;
+        padding: 5px 0;
+        border-radius: 6px;
+    }
+
+    .onlysmall option {
+        background-color: transparent;
+        border: 0;
+        outline: none;
+    }
+
+    .onlysmall select {
+        background-color: transparent;
+        color: white;
+        font-size: 10px;
+        border: 0;
+        outline: none;
+    }
+
+    .navbtn2 button {
+        padding: 9px 4px;
+        font-size: 9px;
+    }
+
+    .abc {
+        font-size: 13px;
+        padding: 5px 5px;
+    }
+
+    .ac {
+        font-size: 18px;
+        padding: 4px 4px;
+    }
+}
+
