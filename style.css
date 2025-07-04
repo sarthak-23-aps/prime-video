@@ -1,0 +1,315 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+header nav {
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.925);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1vw;
+}
+
+.navbr1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbr2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    outline: none;
+    border: 0;
+    color: white;
+    background: transparent;
+    font-size: 0.89em;
+    padding: 4px 6px;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    white-space: nowrap;
+}
+.navbr2 h1 {
+    background-color: transparent;
+    padding: 2px 1px;
+    border-radius: 5px;
+}
+.navbr2 h1:hover {
+    color: black;
+    background-color: white;
+}
+
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.am {
+    background-color: rgb(73, 129, 233);
+}
+
+.am:hover {
+    background-color: rgb(73, 84, 233);
+    color: white;
+}
+
+.navbr1 h1 {
+    font-size: 0.98em;
+    white-space: nowrap;
+}
+
+.navbr2 h1 {
+    font-size: 0.98em;
+    white-space: nowrap;
+}
+
+.onlysmall {
+    display: none;
+}
+
+.ac {
+    font-size: 1.2em;
+    background-color: transparent;
+    padding: 4px 3px;
+    border-radius: 100%;
+}
+.ac:hover {
+color: black;
+background-color: white;
+}
+
+
+.abc {
+    background-color: transparent;
+    border-radius: 100%;
+    padding: 5px 5px;
+    color: white;
+}
+.abc:hover {
+    background-color: white;
+    color: black;
+}
+.onlysmall {
+    padding: 4px 2px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+.onlysmall:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+@media only screen and (max-width:900px) {
+    .ab {
+        display: none;
+    }
+
+    .onlysmall {
+        display: flex;
+    }
+
+
+}
+
+@media only screen and (max-width:500px) {
+
+    header nav {
+        padding: 0 1vw;
+    }
+    .navbr1 h1 {
+        font-size: 0.81em;
+        white-space: nowrap;
+    }
+
+    .navbr2 h1 {
+        font-size: 0.81em;
+        white-space: nowrap;
+    }
+
+    .onlysmall {
+        font-size: 0.91em;
+    }
+
+    .btn {
+        font-size: 0.74em;
+        padding: 3px 2px;
+    }
+
+    .ac {
+        font-size: 0.86em;
+    }
+
+    .abc {
+        font-size: 0.80em;
+    }
+
+    .navbr2 {
+        margin-left: 57px;
+        gap: 5px;
+    }
+    .navbr1 {
+        gap: 5px;
+    }
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+.pic1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pic1 img {
+    width: 50%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tex {
+    margin-top: 110px;
+    margin-left: 4vw;
+    font-size: 1.3em;
+}
+.tex h3 {
+    padding: 30px 0;
+}
+.tex button {
+    outline: none;
+    border: 0;
+    background-color: white;
+    border-radius: 5px;
+    padding: 12px 10px;
+    font-size: 1em;
+}
+.tex button:hover{
+    transform: scale(1.1);
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;  
+}
+
+.pic2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pic2 img {
+    width: 50%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.texe {
+    margin-top: 110px;
+    margin-left: 4vw;
+    font-size: 1.3em;
+}
+.texe h3 {
+    padding: 30px 0;
+}
+.texe button {
+    outline: none;
+    border: 0;
+    background-color: white;
+    border-radius: 5px;
+    padding: 12px 10px;
+    font-size: 1em;
+}
+.texe button:hover{
+    transform: scale(1.1);
+    transition: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;  
+}
+
+@media only screen and (max-width:850px) {
+    .tex {
+    margin-top: 45px;
+    margin-left: 4vw;
+    font-size: 1em;
+}
+.texe {
+    margin-top: 65px;
+    margin-left: 4vw;
+    font-size: 1em;
+
+}
+.tex h3 {
+    padding: 16px 0;
+}
+.texe h3 {
+    padding: 16px 0;
+}
+
+}
+
+@media only screen and (max-width:600px) {
+    .pic1 {
+        display: inline-flex;
+        flex-direction: column-reverse;
+        margin: 0 6px;
+    }
+    .pic2 {
+        display: inline-flex;
+        flex-direction: column-reverse;
+        margin: 0 6px;
+    }
+    .pic1 img {
+        width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .pic2 img {
+       width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    }
+    .pic1 button {
+        display: block;
+        text-align: center;
+        width: 96%;
+        white-space: nowrap;
+    }
+    .pic2 button {
+        display: block;
+        text-align: center;
+        width: 96%;
+        white-space: nowrap;
+    }
+    
+}
+
+
+
+
